@@ -1,2 +1,3 @@
-# vuepress-plugin-code-copy
-A Vuepress plugin that adds copy code buttons to all code blocks.
+# Vuepress Code Copy Plugin
+
+> A plugin for Vuepress that appends a copy button (and logic) to every instance of a given selector (defaults to `div[class*="language-"] pre`
