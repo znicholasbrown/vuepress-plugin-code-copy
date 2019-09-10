@@ -21,7 +21,7 @@
 <script>
 export default {
     props: {
-        parent: Element,
+        parent: Object,
         code: String,
         options: {
             align: String,
