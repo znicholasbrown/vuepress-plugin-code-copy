@@ -2,6 +2,14 @@
 
 > A plugin for Vuepress that appends a copy button (and logic) to every instance of a given selector (defaults to `div[class*="language-"] pre`
 
+## Installation
+
+```
+$ npm install vuepress-plugin-code-copy
+# OR
+$ yarn add vuepress-plugin-code-copy
+```
+
 ## Usage
 
 The plugin can be added to `.vuepress/config.js` in your Vuepress project under `plugins`:
