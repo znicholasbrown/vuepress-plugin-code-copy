@@ -22,7 +22,7 @@ export default {
                         successText: successText
                     }
                     instance.options = { ...options }
-                    instance.code = el.innerHTML
+                    instance.code = el.innerText
                     instance.parent = el
                     instance.$mount()
                     el.classList.add('code-copy-added')
