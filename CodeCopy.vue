@@ -59,7 +59,7 @@ export default {
         },
         copyToClipboard(el) {
             navigator.clipboard
-                .writeText(this.code.replace(/<[^>]*>?/gm, ''))
+                .writeText(this.code)
                 .then(
                     () => {
                         clearTimeout(this.successTimeout)
