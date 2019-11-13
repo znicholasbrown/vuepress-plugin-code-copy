@@ -34,6 +34,8 @@ module.exports = {
         backgroundTransition: Boolean,
         backgroundColor: String,
         successText: String
+        }
+    ]
   ]
 }
 ```
