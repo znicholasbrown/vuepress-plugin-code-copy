@@ -82,3 +82,10 @@ This sets the color of the background transition animation and can take any [hex
 -   Default: `Copied!`
 
 This sets the text that displays when a user presses the copy button.
+
+### onHover
+
+-   Type: `Boolean`
+-   Default: `true`
+
+Copy icon is always visible or only visible when hovering over code block. 
