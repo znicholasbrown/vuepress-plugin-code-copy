@@ -30,7 +30,7 @@ export default {
             backgroundTransition: Boolean,
             backgroundColor: String,
             successText: String,
-            hover: Boolean
+            onHover: Boolean
         }
     },
     data() {
@@ -47,7 +47,7 @@ export default {
             return style
         },
         hoverStyle() {
-            return this.options.hover ? 'hover' : ''
+            return this.options.onHover ? 'hover' : ''
         }
     },
     methods: {

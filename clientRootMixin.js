@@ -20,7 +20,7 @@ export default {
                         backgroundTransition: backgroundTransition,
                         backgroundColor: backgroundColor,
                         successText: successText,
-                        hover: hover
+                        onHover: onHover
                     }
                     instance.options = { ...options }
                     instance.code = el.innerText
