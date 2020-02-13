@@ -6,7 +6,7 @@ module.exports = (options = {}, ctx) => ({
         align: options.align || 'bottom',
         color: options.color || '#27b1ff',
         backgroundColor: options.backgroundColor || '#0075b8',
-        backgroundTransition: options.backgroundTransition || true,
+        backgroundTransition: options.backgroundTransition !== false,
         successText: options.successText || 'Copied!',
         onHover: options.onHover !== false
     },
