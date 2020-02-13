@@ -7,7 +7,8 @@ module.exports = (options = {}, ctx) => ({
         color: options.color || '#27b1ff',
         backgroundColor: options.backgroundColor || '#0075b8',
         backgroundTransition: options.backgroundTransition || true,
-        successText: options.successText || 'Copied!'
+        successText: options.successText || 'Copied!',
+        hover: options.hover || true
     },
     enhanceAppFiles: [path.resolve(__dirname, 'appFile.js')],
     clientRootMixin: path.resolve(__dirname, 'clientRootMixin.js')

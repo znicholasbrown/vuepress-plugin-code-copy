@@ -28,7 +28,8 @@ export default {
             color: String,
             backgroundTransition: Boolean,
             backgroundColor: String,
-            successText: String
+            successText: String,
+            hover: Boolean
         }
     },
     data() {
