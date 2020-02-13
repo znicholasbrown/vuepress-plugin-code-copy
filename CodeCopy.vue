@@ -6,6 +6,7 @@
             width="24"
             height="24"
             viewBox="0 0 24 24"
+            :class="hoverStyle"
             :style="alignStyle"
         >
             <path fill="none" d="M0 0h24v24H0z" />
@@ -44,6 +45,9 @@ export default {
             let style = {}
             style[this.options.align] = '7.5px'
             return style
+        },
+        hoverStyle() {
+            return this.options.hover ? 'hover' : ''
         }
     },
     methods: {
@@ -101,16 +105,14 @@ export default {
 </script>
 
 <style scoped>
-.code-copy {
-    opacity: 0;
-}
-
 svg {
     position: absolute;
     right: 7.5px;
     opacity: 0.45;
     cursor: pointer;
 }
+
+svg.hover { opacity: 0 }
 
 svg:hover {
     opacity: 1;
