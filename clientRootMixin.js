@@ -19,7 +19,8 @@ export default {
                         color: color,
                         backgroundTransition: backgroundTransition,
                         backgroundColor: backgroundColor,
-                        successText: successText
+                        successText: successText,
+                        staticIcon: staticIcon
                     }
                     instance.options = { ...options }
                     instance.code = el.innerText
