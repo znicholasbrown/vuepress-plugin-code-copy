@@ -6,7 +6,7 @@
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            :class="hoverStyle"
+            :class="iconClass"
             :style="alignStyle"
         >
             <path fill="none" d="M0 0h24v24H0z" />
@@ -30,7 +30,7 @@ export default {
             backgroundTransition: Boolean,
             backgroundColor: String,
             successText: String,
-            onHover: Boolean
+            staticIcon: Boolean
         }
     },
     data() {
@@ -46,8 +46,8 @@ export default {
             style[this.options.align] = '7.5px'
             return style
         },
-        hoverStyle() {
-            return this.options.onHover ? 'hover' : ''
+        iconClass() {
+            return this.options.staticIcon ? '' : 'hover'
         }
     },
     methods: {
@@ -108,14 +108,14 @@ export default {
 svg {
     position: absolute;
     right: 7.5px;
-    opacity: 0.45;
+    opacity: 0.75;
     cursor: pointer;
 }
 
 svg.hover { opacity: 0 }
 
 svg:hover {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 span {
@@ -127,6 +127,6 @@ span {
 }
 
 .success {
-    opacity: 1;
+    opacity: 1 !important;
 }
 </style>

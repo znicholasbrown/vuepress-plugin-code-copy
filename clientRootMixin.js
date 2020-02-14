@@ -20,7 +20,7 @@ export default {
                         backgroundTransition: backgroundTransition,
                         backgroundColor: backgroundColor,
                         successText: successText,
-                        onHover: onHover
+                        staticIcon: staticIcon
                     }
                     instance.options = { ...options }
                     instance.code = el.innerText
